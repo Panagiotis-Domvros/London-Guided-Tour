@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>London by Mr. Domvros</title>
+    <style>
+        :root {
+            --royal-blue: #012169;
+            --union-red: #C8102E;
+            --white: #FFFFFF;
+            --british-bg: #f8f9fa;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Georgia', serif;
+            background-color: var(--british-bg);
+            color: var(--royal-blue);
+        }
+
+        header {
+            background-color: var(--royal-blue);
+            color: var(--white);
+            padding: 1rem;
+            text-align: center;
+            border-bottom: 8px solid var(--union-red);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        header img {
+            height: 60px;
+            width: auto;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+            text-transform: none; /* Sentence case as requested */
+        }
+
+        .cta-section {
+            padding: 15px;
+            text-align: center;
+            background: var(--white);
+        }
+
+        .launch-btn {
+            background-color: var(--union-red);
+            color: var(--white);
+            padding: 12px 25px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            text-decoration: none;
+            text-transform: uppercase;
+            border-radius: 50px;
+            border: 3px solid var(--royal-blue);
+            display: inline-block;
+            transition: 0.3s;
+        }
+
+        .launch-btn:hover {
+            background-color: var(--royal-blue);
+            transform: scale(1.05);
+        }
+
+        .content-section {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 15px;
+        }
+
+        .video-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 20px; /* Reduced spacing by 30% */
+            background: var(--white);
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            align-items: flex-start;
+        }
+
+        .video-container {
+            flex: 1;
+            min-width: 250px; /* More compact container */
+        }
+
+        video {
+            width: 100%;
+            border-radius: 6px;
+            border: 2px solid var(--royal-blue);
+        }
+
+        .list-container {
+            flex: 1.5;
+            min-width: 280px;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            border-bottom: 2px solid var(--union-red);
+            margin-top: 0;
+            padding-bottom: 5px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            column-count: 2; /* Saves 30% vertical space */
+            column-gap: 15px;
+        }
+
+        li {
+            font-size: 0.85rem;
+            padding: 3px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .day-header {
+            font-weight: bold;
+            color: var(--union-red);
+            display: block;
+            margin-top: 5px;
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: var(--royal-blue);
+            color: var(--white);
+            text-align: center;
+            padding: 1rem;
+            border-top: 8px solid var(--union-red);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .video-row { flex-direction: column; }
+            ul { column-count: 1; }
+            header h1 { font-size: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="pdhub-logo.png" alt="PD Hub Logo">
+        <h1>London by Mr. Domvros</h1>
+    </header>
+
+    <div class="cta-section">
+        <a href="https://earth.google.com/web/data=MkUKQwpBCiAxcnliaTBZUEptS3pCU2ZrVXVoeExhekRPdzluTlNjVRIbChkyNjFhNDk2ZV81QTJGNzExM0QyMDAwMDMzIAJCAggASggIr-2pgAIQAQ" target="_blank" class="launch-btn">
+            🚀 Launch 3D Experience
+        </a>
+    </div>
+
+    <div class="content-section">
+
+        <div class="video-row">
+            <div class="video-container">
+                <video controls><source src="14 must see places in London.mp4" type="video/mp4"></video>
+            </div>
+            <div class="list-container">
+                <h2>14 must-see places in London</h2>
+                <ul>
+                    <li>St. Pancras Hotel</li>
+                    <li>The O2</li>
+                    <li>Borough Market</li>
+                    <li>Sir John Soane’s Museum</li>
+                    <li>Canary Wharf</li>
+                    <li>Somerset House</li>
+                    <li>Lift 109</li>
+                    <li>Chiswick House</li>
+                    <li>Royal Albert Hall</li>
+                    <li>Big Mamma</li>
+                    <li>Harrods</li>
+                    <li>Peggy Jean</li>
+                    <li>Barbican Centre</li>
+                    <li>St. Dunstan in the East</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="video-row">
+            <div class="video-container">
+                <video controls><source src="21 must visit places in London.mp4" type="video/mp4"></video>
+            </div>
+            <div class="list-container">
+                <h2>21 must-visit places in London</h2>
+                <ul>
+                    <li>Greenland Dock</li>
+                    <li>The Dickens Inn</li>
+                    <li>Tokyo Bagel</li>
+                    <li>Millennium Bridge</li>
+                    <li>Apsley House</li>
+                    <li>Wagtail Rooftop</li>
+                    <li>Cahoots Postal Office</li>
+                    <li>Mari Deli & Dining</li>
+                    <li>The Prince’s Head</li>
+                    <li>Java Whiskers</li>
+                    <li>National Maritime Museum</li>
+                    <li>Hutong</li>
+                    <li>Kew Gardens</li>
+                    <li>Butler’s Wharf</li>
+                    <li>Queen Mary’s Rose Garden</li>
+                    <li>The Rubens Tea</li>
+                    <li>Post Building Rooftop</li>
+                    <li>Gloucester Avenue</li>
+                    <li>John Sandoe Books</li>
+                    <li>Cloud Cable Car</li>
+                    <li>St. Dunstan in the East</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="video-row">
+            <div class="video-container">
+                <video controls><source src="20 Hidden places in london.mp4" type="video/mp4"></video>
+            </div>
+            <div class="list-container">
+                <h2>20 hidden gems in London</h2>
+                <ul>
+                    <li>Treehouse Restaurant</li>
+                    <li>1890s Tube Carriage</li>
+                    <li>Hidden Mystery Maze</li>
+                    <li>Narrowest Street</li>
+                    <li>Retro Diner</li>
+                    <li>The Onion Garden</li>
+                    <li>Amy Winehouse Mural</li>
+                    <li>London Zoo Lions</li>
+                    <li>Gordon's Wine Bar</li>
+                    <li>Golders Hill Park Zoo</li>
+                    <li>Rules Restaurant</li>
+                    <li>Museum of Curiosities</li>
+                    <li>St. John’s Lodge</li>
+                    <li>Henry VIII’s Kitchens</li>
+                    <li>Cubana Restaurant</li>
+                    <li>Spitalfields Koi</li>
+                    <li>Kew Treetop Walk</li>
+                    <li>Poetry Pharmacy</li>
+                    <li>Brixton Windmill</li>
+                    <li>Silver Vaults</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="video-row">
+            <div class="video-container">
+                <video controls><source src="How to spend three days in London.mp4" type="video/mp4"></video>
+            </div>
+            <div class="list-container">
+                <h2>How to spend three days in London</h2>
+                <ul>
+                    <li><span class="day-header">Day 1: Culture</span></li>
+                    <li>Lincoln’s Inn</li>
+                    <li>Sir John Soane’s Museum</li>
+                    <li>The Ship Tavern</li>
+                    <li>British Museum</li>
+                    <li>London Review Bookshop</li>
+                    <li>Outernet</li>
+                    <li>Neal’s Yard</li>
+                    <li>Covent Garden</li>
+                    <li>Victoria Embankment</li>
+                    
+                    <li><span class="day-header">Day 2: Landmarks</span></li>
+                    <li>Westminster Abbey</li>
+                    <li>Big Ben</li>
+                    <li>London Eye</li>
+                    <li>Horse Guards Parade</li>
+                    <li>Sherlock Holmes Pub</li>
+                    <li>Trafalgar Square</li>
+                    <li>National Gallery</li>
+                    <li>Lego Store</li>
+                    <li>Chinatown</li>
+                    <li>Piccadilly Circus</li>
+
+                    <li><span class="day-header">Day 3: Skyline</span></li>
+                    <li>St. Paul’s Cathedral</li>
+                    <li>Millennium Bridge</li>
+                    <li>Borough Market</li>
+                    <li>Afternoon Tea at The Shard</li>
+                    <li>The Queen’s Walk</li>
+                    <li>Tower Bridge</li>
+                    <li>Thames Evening Cruise</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        ✨✍️ Created by Panagiotis Domvros, English & Drama Teacher, All Rights Reserved ✍️✨
+    </footer>
+
+</body>
+</html>
